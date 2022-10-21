@@ -30,6 +30,7 @@ public class AirIndiaRestController {
 		ticketInfo.setJourneyDate(info.getJourneyDt());
 		ticketInfo.setTicketPrice("50000.0");
 		ticketInfo.setTicketStatus("CONFIRMED");
+		System.out.println("ticketInfo::::"+ticketInfo);
 		return new ResponseEntity<TicketInfo>(ticketInfo, HttpStatus.CREATED);
 	}
 	
