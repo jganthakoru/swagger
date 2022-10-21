@@ -22,6 +22,7 @@ public class AirIndiaRestController {
 	@PostMapping("/bookTicket" )
 	public ResponseEntity<TicketInfo> bookTicket(@RequestBody PassengerInfo info){
 		TicketInfo ticketInfo = new TicketInfo();
+		System.out.println("for jenkins integration...");
 		ticketInfo.setName(info.getFirstName());
 		ticketInfo.setFlightId(info.getFlightId());
 		ticketInfo.setFrom(info.getFrom());
